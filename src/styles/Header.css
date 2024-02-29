@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container{
+ display: flex;
+ justify-content: space-between;
+ background-color: rgb(26, 139, 238);
+ color: white;
+ align-items: center;
+ padding: 0.5rem;
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.24rem;
+    font-family: 'Times New Roman', Times, serif;
+    animation: slideIn forwards .9s;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.nav-bar ul{
+   display: flex;
+   justify-content: space-between;
+   
+} 
+.nav-bar ul li{
+    list-style-type: none;
+    padding: 1rem;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.menu-icon {
+    display: none; /* Hide on larger screens */
+    cursor: pointer;
+    position: relative; /* Position it relative to the header */
+    top: 0;
+    right: 1rem; /* Place it at the top right corner */
+    transform: translateY(-50%); /* Center it vertically */
+    color: white; /* Set icon color */
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: all .7s ease-in-out;
+  }
+.user-cart{
+    animation: fadeIn .9s ease-in-out;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity: 1.2;
+    }
+}
+
+/* Media Query for screens up to 760px */
+@media (max-width: 760px) {
+    /* Adjust styles for screens up to 760px */
+  
+    header .logo {
+      font-size: 1.5rem; /* Reduce logo size for smaller screens */
+    }
+ 
+    .nav-bar {
+      display: none; /* Hide navigation by default */
+      position: relative;
+      z-index: 2;
+      top: 70px; /* Adjust the top position based on your header height */
+      left: 0;
+      width: 100%;
+      background-color: rgb(26, 139, 238);
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center;
+    }
+  
+    .nav-bar.show {
+      display: flex; /* Show navigation when showMenu is true */
+    }
+  
+    .nav-bar ul {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .nav-bar ul li {
+      padding: 0.5rem;
+    }
+  
+    .menu-icon {
+      display: flex; /* Show menu icon on smaller screens */
+      cursor: pointer;
+      position: absolute;
+      top: 3%;
+      margin-right: 5rem;
+      right: 1rem;
+      color: white;
+      font-size: 1.5rem;
+      z-index: 1; /* Ensure it's above the navigation */
+    }
+  }
+  
+
+  
