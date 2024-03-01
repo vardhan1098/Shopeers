@@ -1,13 +1,13 @@
-import React from 'react';
-import { useCart } from './CartContext';
-import '../styles/CartPage.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useCart } from "./CartContext";
+import "../styles/CartPage.css";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
   const { cartState, removeFromCart } = useCart();
   const cartItems = cartState.items;
 
-  console.log('cartItems:', cartItems);
+  console.log("cartItems:", cartItems);
   const calculateTotalAmount = () => {
     return cartItems.reduce((total, item) => {
       // Check if the item has the quantity property
@@ -19,7 +19,7 @@ const CartPage = () => {
       }
     }, 0);
   };
-  
+
   return (
     <div className="cart-page">
       <h2>Your Cart</h2>
@@ -49,9 +49,9 @@ const CartPage = () => {
           <div className="total-amount">
             <p>Total Amount: ${calculateTotalAmount().toFixed(2)}</p>
           </div>
-      <Link to="/checkout" className="check">
-        <button>CheckOut</button>
-        </Link>
+          <Link to="/checkout" className="check">
+            <button>CheckOut</button>
+          </Link>
         </>
       )}
     </div>

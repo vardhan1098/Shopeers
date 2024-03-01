@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import '../styles/CheckoutPage.css';
+import React, { useState } from "react";
+import "../styles/CheckoutPage.css";
 
 const CheckoutPage = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    address: '',
-    city: '',
-    zipCode: '',
-    cardNumber: '',
-    expirationDate: '',
-    cvv: '',
+    fullName: "",
+    email: "",
+    address: "",
+    city: "",
+    zipCode: "",
+    cardNumber: "",
+    expirationDate: "",
+    cvv: "",
   });
 
   const handleChange = (e) => {
@@ -24,7 +24,7 @@ const CheckoutPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle the checkout submission logic here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Add logic to process the order, make API calls, etc.
   };
 
@@ -78,7 +78,7 @@ const CheckoutPage = () => {
             required
           />
         </div>
-        <button type="submit" >Place Order</button>
+        <button type="submit">Place Order</button>
       </form>
     </div>
   );

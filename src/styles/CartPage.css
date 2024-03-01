@@ -1,49 +1,49 @@
 /* CartPage.css */
 .cart-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .cart-item-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .cart-item {
-    display: flex;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
-    padding: 10px;
-  }
-  
-  .cart-item img {
-    max-width: 100px;
-    max-height: 100px; /* Add max-height to limit image height */
-    margin-right: 10px;
-  }
-  
-  .item-details {
-    flex-grow: 1;
-  }
-  
-  .remove-item {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  .check button{
-    margin: 1rem;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 3rem;
-    transition: all .5s ease-in-out;
-  }
-  .check button:hover{
-    background-color: rgb(38, 92, 38);
-    color: white;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.cart-item img {
+  max-width: 100px;
+  max-height: 100px; /* Add max-height to limit image height */
+  margin-right: 10px;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.remove-item {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.check button {
+  margin: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.check button:hover {
+  background-color: rgb(38, 92, 38);
+  color: white;
+}

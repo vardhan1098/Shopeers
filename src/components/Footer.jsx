@@ -1,5 +1,5 @@
-import React from 'react';
-import '../styles/Footer.css'; // Import your CSS file for styling
+import React from "react";
+import "../styles/Footer.css"; // Import your CSS file for styling
 
 const Footer = () => {
   return (
@@ -10,7 +10,8 @@ const Footer = () => {
             <h3>About Shoppe</h3>
             <p>
               {/* Add brief information about Shoppe here */}
-              Shoppe is your one-stop shop for all your shopping needs. We offer a wide variety of products from top brands at competitive prices.
+              Shoppe is your one-stop shop for all your shopping needs. We offer
+              a wide variety of products from top brands at competitive prices.
             </p>
           </div>
           <div className="footer-section">
@@ -35,17 +36,17 @@ const Footer = () => {
             <ul className="social-links">
               <li>
                 <a href="#">
-                <i class='bx bxl-facebook'></i>
+                  <i class="bx bxl-facebook"></i>
                 </a>
               </li>
               <li>
                 <a href="#">
-                <i class='bx bxl-twitter'></i>
+                  <i class="bx bxl-twitter"></i>
                 </a>
               </li>
               <li>
                 <a href="#">
-                <i class='bx bxl-instagram'></i>
+                  <i class="bx bxl-instagram"></i>
                 </a>
               </li>
             </ul>
@@ -55,20 +56,21 @@ const Footer = () => {
             <ul className="social-links">
               <li>
                 <a href="#">
-                <i class='bx bxl-visa'></i>
+                  <i class="bx bxl-visa"></i>
                 </a>
               </li>
               <li>
                 <a href="#">
-                <i class='bx bxl-mastercard'></i>
+                  <i class="bx bxl-mastercard"></i>
                 </a>
               </li>
             </ul>
-            
           </div>
         </div>
         <div className="copyright">
-          <p>&copy; {new Date().getFullYear()} Shopper Stop. All Rights Reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Shopper Stop. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
